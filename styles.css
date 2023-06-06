@@ -1,0 +1,157 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content{
+  position: relative;
+}
+
+.hero-content img{
+  top:0;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.hero-content2{
+  position: absolute;
+  top: 25%;
+  color: #fff;
+  padding: 25px;
+  font-family: sans-serif;
+}
+
+
+
+
+.hero-content2 h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.hero-content2 h1 {
+  font-size: 48px;
+  font-weight: 400;
+} 
+
+/* Black Box Section */
+.black-box {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  padding: 50px, 0;
+  position: relative;
+}
+
+.black-box h3 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.black-box span {
+  font-size: 96px;
+  color: white;
+}
+
+/* Card Container Section */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  margin: 50px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 340px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-content h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #888;
+}
+
+/* Bottom Section */
+.bottom-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  color: #fff;
+}
+
+.contact-me{
+  background-color: forestgreen;
+  flex: 1;
+}
+
+.about-me{
+  background-color: maroon;
+  flex: 1;
+}
+
+.bottom-section h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.bottom-section p {
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 786px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .black-box h3 {
+    font-size: 24px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+}
+
+
+
+
